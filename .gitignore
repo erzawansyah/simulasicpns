@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pyrogram
+.env
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
+
+# session files
+*.session
