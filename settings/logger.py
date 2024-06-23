@@ -1,8 +1,6 @@
 import logging
 
-
 class BotLogger:
-
     def __init__(
         self,
         name: str = "bot_logger",
@@ -26,14 +24,31 @@ class BotLogger:
             self.logger.addHandler(console_handler)
 
     def info(self, message: str):
+        """
+        Log an informational message.
+        
+        Args:
+            message (str): The message to log.
+        """
         self.logger.info(message)
 
     def error(self, message: str):
+        """
+        Log an error message.
+        
+        Args:
+            message (str): The message to log.
+        """
         self.logger.error(message)
 
     def warning(self, message: str):
+        """
+        Log a warning message.
+        
+        Args:
+            message (str): The message to log.
+        """
         self.logger.warning(message)
-
 
 # Example usage
 if __name__ == "__main__":
