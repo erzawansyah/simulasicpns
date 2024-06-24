@@ -14,8 +14,8 @@ handler = EventHandler(app)
 # Register the help command with the event handler
 handler.register(
     EventHandlerType(
-        filename="help",
-        description="Help command",
+        filename="register",
+        description="Register command",
     )
 )
 
