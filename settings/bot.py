@@ -5,10 +5,11 @@ from settings.config import load_config
 # Initialize the logger for bot initialization
 logger = BotLogger("INITIALIZATION")
 
+
 def init_bot() -> Client:
     """
     Initialize and configure the Telegram bot.
-    
+
     Returns:
         Client: Configured Telegram client.
     """
@@ -22,7 +23,7 @@ def init_bot() -> Client:
     try:
         # Initialize the Telegram client with the loaded configuration
         app = Client(
-            "telebot_dev",
+            "simulasicpns",
             api_id=config.api_id,
             api_hash=config.api_hash,
             bot_token=config.bot_token,
